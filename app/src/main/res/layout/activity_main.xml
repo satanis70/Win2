@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundimage"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/text_view_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="104dp"
+        android:gravity="center"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></TextView>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_termens"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="108dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/button_shape"
+        android:text="Основные термины"
+        android:drawableRight="@drawable/ic_baseline_book_24"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_view_main"></androidx.appcompat.widget.AppCompatButton>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_types"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Виды ставок"
+        android:drawableRight="@drawable/ic_baseline_list_alt_24"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/button_shape"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_termens">
+    </androidx.appcompat.widget.AppCompatButton>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_differents"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Разное"
+        android:drawableRight="@drawable/ic_baseline_info_24"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/button_shape"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_types">
+    </androidx.appcompat.widget.AppCompatButton>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
